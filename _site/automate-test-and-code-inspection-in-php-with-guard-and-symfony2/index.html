@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Automate Test and Code Inspection in PHP with Guard, and Symfony2</title>
+    
+    <meta name="description" content="Automate Test and Code Inspection with Guard and Symfony2">
+    
+    <meta name="author" content="Giulio De Donato">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/assets/themes/readable-liuggio/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/readable-liuggio/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/readable-liuggio/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/readable-liuggio/js/styles/github.css" rel="stylesheet">
+    <link href="/assets/themes/readable-liuggio/js/uitotop-jquery-plugin.css" rel="stylesheet">
+    <!-- Google Web Font-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,900italic,300' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="" href="http://welcometothebundle.com/feed.xml">
+
+    <link rel="shortcut icon" href="/assets/themes/readable-liuggio/img/icon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg" />
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <div id="header">
+            <div class="logo span6"><img src="/assets/themes/readable-liuggio/img/welcometothebundle-logo.svg"></div>
+            <h2><a title="Blog of Giulio De Donato" id="sitename" href="http://www.welcometothebundle.com/">Welcome to the bundle</a></h2>  
+            
+            <p>Best Practices, Symfony2, developing, and blah blah blah.</p>
+            
+        </div>
+    </header>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+    <section id="content">
+        <div class="row">
+            <aside class="span3">
+                <div class="well boxed profile">
+                    <p align="center"><img
+                            src="http://www.gravatar.com/avatar/662a52953053d94a145a00df9da9f0d2.png?size=48" class="img-rounded">
+                    </p>
+                    <p style="font-size:95%">I'm liuggio 
+                    (aka <a href="https://plus.google.com/115690008178168800202?rel=author" rel="author" title="Giulio De Donato">Giulio De Donato</a>)
+                         tons of lines of code ago I took a degree in Computer Science, I'm the
+                        lead developer at Terravision. I can't stop studying, you could find me in some conferences, I'm a proud member of <a href="http://roma.grusp.org/">PHP user group</a>, 
+                        and right now I'm in <a href="https://maps.google.it/maps?q=vatican+city&hnear=Vatican+City&gl=it&t=h&z=16">the center of Rome</a>.</p>
+                        <p><strong>ps: I love open-source.</strong></p>
+                </div>
+                <!-- start sticky section
+#################################################
+                -->
+                <div class="well social boxed">
+                    <div class="center" align="center">
+                        <a href="https://github.com/liuggio" title="Giulio De Donato github projects"
+                           target="_blank"><img src="/assets/themes/readable-liuggio/img/github.png" width="32"></a>
+                        <a href="http://twitter.com/liuggio" title="Giulio De Donato twitter page"
+                           target="_blank"><i class="icon-twitter"></i></a>
+                        <a href="http://www.linkedin.com/profile/view?id=94597934"
+                           title="Giulio De Donato Linkedin profile" target="_blank">
+                           <i class="icon-linkedin"></i></a>
+                        <a href="http://www.slideshare.net/liuggio"
+                           title="Giulio De Donato slideshare presentations" target="_blank">
+                           <img src="/assets/themes/readable-liuggio/img/slide.png" width="32">
+                           </a>
+                    </div>
+                    <div class="center">
+                        <div align="center" class="twitter-cnt">
+                            <a href="https://twitter.com/liuggio" class="twitter-follow-button"
+                               data-show-count="false" data-size="large" data-dnt="true" title="Follow Giulio De Donato">Follow
+                                @liuggio</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");</script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end sticky section
+                ================================================== -->
+                <div class="boxed categories">
+                    
+                    <ul class="nav nav-tabs nav-stacked">
+                        
+                        
+
+
+  
+     
+    	<li><a href="/categories.html#post-ref">
+    		post
+    	</a></li>
+     
+    	<li><a href="/categories.html#tutorial-ref">
+    		tutorial
+    	</a></li>
+     
+    	<li><a href="/categories.html#talk-ref">
+    		talk
+    	</a></li>
+     
+    	<li><a href="/categories.html#blah-blah-blah-ref">
+    		blah-blah-blah
+    	</a></li>
+    
+  
+
+
+                    </ul>
+                </div>
+                
+                <div class="boxed cloud">
+                    <h3>Tags</h3>
+                    <ul class="tag_box">
+                        
+                        
+
+
+  
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#assetic-ref" rel="2">assetic <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-11"><a href="/tags.html#symfony2-ref" rel="11">symfony2 <span>11</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#bundle-ref" rel="3">bundle <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#github-ref" rel="1">github <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#bitbucket-ref" rel="1">bitbucket <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-13"><a href="/tags.html#PHP-ref" rel="13">PHP <span>13</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#assets-ref" rel="3">assets <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#rackspace-ref" rel="1">rackspace <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#CDN-ref" rel="1">CDN <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#monitoring-ref" rel="1">monitoring <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#statsd-ref" rel="3">statsd <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#vagrant-ref" rel="1">vagrant <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#graphite-ref" rel="1">graphite <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#tvision-ref" rel="1">tvision <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#team-ref" rel="1">team <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#coding-ref" rel="1">coding <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#conference-ref" rel="2">conference <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#cache-ref" rel="3">cache <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#optimization-ref" rel="1">optimization <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#servergrove-ref" rel="1">servergrove <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-4"><a href="/tags.html#phpunit-ref" rel="4">phpunit <span>4</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#guard-ref" rel="1">guard <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#automate-ref" rel="1">automate <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#code-inspection-ref" rel="1">code-inspection <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#TDD-ref" rel="2">TDD <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-4"><a href="/tags.html#BDD-ref" rel="4">BDD <span>4</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#test-ref" rel="3">test <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#phpspec-ref" rel="2">phpspec <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#HTTP-ref" rel="1">HTTP <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#APC-ref" rel="1">APC <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#redis-ref" rel="1">redis <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#doctrine2-ref" rel="1">doctrine2 <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#doctrine-ref" rel="2">doctrine <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#php-internal-ref" rel="1">php-internal <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#interface-ref" rel="1">interface <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#design-patterns-ref" rel="1">design-patterns <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#talk-ref" rel="1">talk <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#rest-ref" rel="3">rest <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-3"><a href="/tags.html#api-ref" rel="3">api <span>3</span></a></li>
+     
+    	<li class="tag-list tag-size-4"><a href="/tags.html#DDD-ref" rel="4">DDD <span>4</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#value objects-ref" rel="2">value objects <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-2"><a href="/tags.html#money-ref" rel="2">money <span>2</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#symfony-ref" rel="1">symfony <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#price-ref" rel="1">price <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#fixture-ref" rel="1">fixture <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#functional-ref" rel="1">functional <span>1</span></a></li>
+    
+  
+
+
+
+                    </ul>
+                </div>
+
+                
+                    <div id="related" class="boxed">
+                    <h3>Related Posts</h3>
+                    <ul class="posts">
+                    
+                    <li>
+                      <a href="/speedup-symfony-functional-tests-phpunit">Speed up PHPUnit and functional tests with Symfony and fastest</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/price-more-then-money-php-library">Price: more then Money - PHP library</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/best-resources-about-symfony-tdd-bdd-ddd-methologies">(my) Best resources about methodologies on Symfony, PHP, DDD, BDD ...</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/domain-driven-design-and-symfony-for-simple-app">Domain Driven Design principles with Symfony2 also for dummy applications</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/persist-the-money-doctrine-value-object">Persist the Money, Doctrine Value Object</a>
+                    </li>
+                    
+                    </ul>
+                    </div>
+                
+            </aside>
+
+            <!-- start content section
+            ================================================== -->
+            <div class="span9">
+                
+
+<div class="span9">
+    <div class="page-header">
+        <div class="row">
+            <h1 class="span8">Automate Test and Code Inspection in PHP with Guard, and Symfony2 
+            </h1>
+          <div class="span1 right bottom sticky center">
+              
+              <div id="edit-github">
+                  <a class="btn btn-mini" target="_blank" href="https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-01-03-automate-test-and-code-inspection-in-php-with-guard-and-symfony2.md" title="Found a typo? Please edit it on Github"><i class="icon-edit pull-left"></i><b>Fix</b></a>
+              </div>
+              
+
+              <div id="sticky-pagination" class="hidden">
+                  
+                      <a class="btn-mini pull-left" target="_blank" href="/servergrove-stastdclientbundle-interesting-symfony-bundles" title="ServerGrove StastdClientBundle Interesting Symfony Bundles">
+                          <i class="icon-arrow-left"></i>
+                      </a>
+                  
+
+                  
+                  <a class="btn-mini pull-right" target="_blank" href="/phpunit-vs-phpspec-theory-on-behaviour-driven-development" title="PHPUnit vs PHPSpec: theory on Behaviour Driven Development 1/3">
+                      <i class="icon-arrow-right"></i>
+                  </a>
+                  
+              </div>
+
+               <a href="https://twitter.com/share" class="twitter-share-button" data-via="liuggio" data-size="large"
+                  data-count="none">Tweet</a>
+               <script>!function (d, s, id) {
+                   var js, fjs = d.getElementsByTagName(s)[0];
+                   if (!d.getElementById(id)) {
+                       js = d.createElement(s);
+                       js.id = id;
+                       js.src = "//platform.twitter.com/widgets.js";
+                       fjs.parentNode.insertBefore(js, fjs);
+                   }
+               }(document, "script", "twitter-wjs");</script>
+           </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="span4">
+                <div class="date"><span>03 January 2013</span></div>
+            </div>
+
+            <div class="span5">
+                
+                <ul class="tag_box">
+                    
+                    
+
+
+  
+     
+    	<li class="tag-list tag-size-4"><a href="/tags.html#phpunit-ref">phpunit <span>4</span></a></li>
+     
+    	<li class="tag-list tag-size-11"><a href="/tags.html#symfony2-ref">symfony2 <span>11</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#guard-ref">guard <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-13"><a href="/tags.html#PHP-ref">PHP <span>13</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#automate-ref">automate <span>1</span></a></li>
+     
+    	<li class="tag-list tag-size-1"><a href="/tags.html#code-inspection-ref">code-inspection <span>1</span></a></li>
+    
+  
+
+
+
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <article>
+        
+<h2 id="hey-phper-do-you-automate-your-test">Hey PHPer do you automate your test?</h2>
+
+<p>In everyday life there are tools that can not only speed, but also lighten the workload of your mind,
+in that regard I wanted to share a useful library: <a href="https://github.com/guard/guard">Guard</a>.</p>
+
+<h2 id="watch--guard"><code>Watch</code>  Guard!</h2>
+
+<p><a href="https://github.com/guard/guard">Guard</a> is written in Ruby, it automates commands based on events that happen in the filesystem.</p>
+
+<p><a href="https://github.com/guard/guard">Guard</a> in a short time has become popular especially in the automate testing.</p>
+
+<p>You can easily edit your files, having only the front window of your editor/IDE, each change will run the test, and you will be notified.</p>
+
+<p>Indeed during these years of development, especially in PHP I overstimulated shortcuts, I have become a slave of the keyboard, <strong>Alt-Tab</strong>, <strong>Key-Up + Enter</strong> for example, are a must for TDD programmers .</p>
+
+<p>For years I had the <strong>CTRL+S</strong> tic, in fact in my life I have saved (by mistake) around 2000 pages browsing with Firefox.</p>
+
+<p>Before finding out <a href="https://github.com/guard/guard">Guard</a>, I was using a crude one-line script,
+it runs each 3 seconds PHPUnit if error otherwise waits 10 seconds</p>
+
+<pre><code>while true; do clear; phpunit; if [ ! $? ]; then sleep 10; else sleep 3;fi; done;
+</code></pre>
+
+<p>but it was not enough, I needed something which could perform only the Test for the file that I had changed: <a href="https://github.com/Maher4Ever/guard-phpunit">guard-phpunit</a></p>
+
+<p>In the PHP world, <a href="https://github.com/guard/guard">Guard</a> is not so popular but instead would require much more importance.</p>
+
+<h2 id="install-guard-phpunithttpsgithubcommaher4everguard-phpunit"><strong>Install</strong> <a href="https://github.com/Maher4Ever/guard-phpunit">guard-phpunit</a>!</h2>
+
+<p>Simply follow the instructions of the README.md https://github.com/Maher4Ever/guard-phpunit</p>
+
+<h3 id="install-guard-phpunit">1 Install guard-phpunit</h3>
+
+<p><code>gem install guard-phpunit</code></p>
+
+<h3 id="step-create-a-guardfile">2 Step create a <code>Guardfile</code></h3>
+
+<pre><code>guard 'phpunit', :tests_path =&gt; 'Tests', :cli =&gt; '--colors' do
+ # Watch tests files
+ watch(%r{^.+Test\.php$})
+ # Watch library files and run their tests
+ watch(%r{^Object/(.+)\.php}) { |m| "Tests/#{m[1]}Test.php" }
+end
+</code></pre>
+
+<h3 id="run-with-guard">3 Run with <code>guard</code></h3>
+
+<pre><code>liuggio@liuggio:/var/repos/StatsDClientBundle$ guard
+20:33:21 - INFO - Guard uses NotifySend to send notifications.
+20:33:21 - INFO - Guard uses TerminalTitle to send notifications.
+20:33:21 - INFO - Running all tests
+20:33:23 - INFO - ..................
+&gt; [#51616B16C20E]
+&gt; [#51616B16C20E] Finished in 2 seconds
+&gt; [#51616B16C20E] 18 tests, 43 assertions
+20:33:23 - INFO - Guard is now watching at '/var/www/StatsDClientBundle'
+</code></pre>
+
+<p>This will test the entire library for you, any changes will test only the files that have changed</p>
+
+<p>If you install <code>libnotify</code> with</p>
+
+<p><code>gem install libnotify</code></p>
+
+<p>you will have an Icon next your top panel</p>
+
+<p><img src="http://welcometothebundle.com/assets/themes/readable-liuggio/img/guard-phpunit-sf2.png" alt="liuggio-guard-phpunit-sf2-notifier" /></p>
+
+<h3 id="trick-guard-on-large-directories">4 Trick Guard on large directories</h3>
+
+<p>If you have big project you need to increase the amount of watches of libnotify</p>
+
+<p>see this page for more info: https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers</p>
+
+<h2 id="inspect--guard"><code>Inspect</code>  Guard!</h2>
+
+<p>Another plugin that I suggest is Guard for code inspection:</p>
+
+<p>is easy to install</p>
+
+<pre><code>sudo pear install PHP_CodeSniffer
+sudo gem install guard-phpcs
+</code></pre>
+
+<p>and then add to your Guardfile</p>
+
+<pre><code>guard 'phpunit', :tests_path =&gt; 'Tests', :cli =&gt; '--colors' do
+ # Watch tests files
+ watch(%r{^.+Test\.php$})
+ # Watch library files and run their tests
+ watch(%r{^/(.+)/(.+)/(.+)\.php}) { |m| "Test/#{m[1]}/#{m[2]}/#{m[3]}Test.php" }
+end
+guard 'phpcs', :standard =&gt; 'PSR1' do
+    watch(%r{.*\.php$})
+end
+</code></pre>
+
+<p>This will detect all the camel case problems, and you will have to follow the standard PSR1 :D</p>
+
+<h2 id="guard--symfony2--guard-phpunit-sf2httpsgithubcomliuggioguard-phpunit-sf2">Guard + <code>Symfony2</code> = <a href="https://github.com/liuggio/guard-phpunit-sf2">guard-phpunit-sf2</a></h2>
+
+<p>Unfortunately <code>guard-phpunit</code> does not work with symfony2 framework,</p>
+
+<p>so I forked that repo and I made <a href="https://github.com/liuggio/guard-phpunit-sf2">guard-phpunit-sf2</a></p>
+
+<p><strong>Hurray!!</strong></p>
+
+<p>guard-phpunit-sf2 has not been pushed on RubyGems. If you want to try it, clone the repository, build the gem and install it.</p>
+
+<pre><code>git clone git@github.com:liuggio/guard-phpunit-sf2.git
+cd guard-phpunit-sf2
+gem build guard-phpunit-sf2.gemspec
+sudo gem instal guard-phpunit-sf2-0.1.4.gem
+</code></pre>
+
+<p>then create the Guardfile into the root of your Symfony2 project</p>
+
+<pre><code>guard 'phpunit', :cli =&gt; '--colors -c app/' do
+     # Watch tests files
+     watch(%r{^src\/.+Test\.php$})
+
+     # Watch src file and run its test,
+     # Test string: src/Tvision/Bundle/CartBundle/Repository/CartRepository.php
+     watch(%r{^src\/(.+)\/(.+)Bundle\/(.+)\.php$}) { |m| "src/#{m[1]}/#{m[2]}Bundle/Tests/#{m[3]}Test.php" } # Watch all files in your bundles and run the respective tests on change
+end
+</code></pre>
+
+<p>then lunch <code>guard</code> and start testing.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PS: maybe you should uninstall guard-phpunit in order to work with symfony2 :</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code>sudo gem uninstall guard-phpunit</code></p>
+
+<p>Happy test to everybody.</p>
+
+
+    </article>
+    <hr>
+    <div id="related">
+      <h3>Related Posts</h3>
+      <ul class="posts">
+      
+      <li>
+       <span>30 Sep 2014 &raquo;</span> <a href="/speedup-symfony-functional-tests-phpunit">Speed up PHPUnit and functional tests with Symfony and fastest</a>
+      </li>
+      
+      <li>
+       <span>31 Aug 2014 &raquo;</span> <a href="/price-more-then-money-php-library">Price: more then Money - PHP library</a>
+      </li>
+      
+      <li>
+       <span>05 May 2014 &raquo;</span> <a href="/best-resources-about-symfony-tdd-bdd-ddd-methologies">(my) Best resources about methodologies on Symfony, PHP, DDD, BDD ...</a>
+      </li>
+      
+      </ul>
+    </div>
+    
+    <div class="pagination">
+        <ul class="pager span9">
+            
+            <li class="prev span3"><a href="/servergrove-stastdclientbundle-interesting-symfony-bundles" title="ServerGrove StastdClientBundle Interesting Symfony Bundles"><i class="icon-arrow-left"></i><br>
+                Previous - ServerGrove StastdClientBundle Interesting Symfony Bundles</a></li>
+            
+            <li  class="span2 center"><a style=" width: 100%;" href="/index.html"><br>Archive</a></li>
+            
+            <li class="next span3"><a href="/phpunit-vs-phpspec-theory-on-behaviour-driven-development" title="PHPUnit vs PHPSpec: theory on Behaviour Driven Development 1/3"><i class="icon-arrow-right"></i> <br>Next - PHPUnit vs PHPSpec: theory on Behaviour Driven Development 1/3</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'welcometothebundle'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+</div>
+  
+ 
+
+
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+      <div class="container">
+        <div class="span3 offset1">
+            <ul class="nav nav-pills nav-stacked"> 
+                <li class="nav-header">Open Source</li>                
+                <li><a href="http://leaphly.org">leaphly <small>cart built around REST specs.</small></a></li>
+                <li><a href="https://poser.pugx.org/">badge-poser <small>badges for composer</small></a></li>
+                <li><a href="https://github.com/PUGX/godfather">godfather <small>php strategy pattern</small></a></li>
+                <li><a href="https://github.com/liuggio/statsd-php-client">statsd-php-client <img class="pull-right" style="max-width:80px;margin-right:30px"  alt="Total Downloads" src="https://poser.pugx.org/liuggio/statsd-php-client/downloads.png"></a></li>
+                <li><a href="https://github.com/liuggio/ExcelBundle">sf2 Excel bundle <img class="pull-right" style="max-width:80px;margin-right:30px" alt="Total Downloads" src="https://poser.pugx.org/liuggio/ExcelBundle/downloads.png"></a></li>
+                 <li><a href="https://github.com/liuggio?tab=repositories"><small>more...</small></a></li>
+            </ul>
+
+        </div>
+
+
+
+        <div  class="span2 offset1" >
+            <ul class="nav nav-pills nav-stacked left">
+            <li class="nav-header">Categories</li>
+                <li><a href="/categories.html#tutorial-ref">
+                    Tutorial
+                </a></li>
+                <li><a href="/categories.html#blah-blah-blah-ref">
+                    Blah-blah-blah
+                </a></li>
+                <li><a href="/categories.html#post-ref">
+                    Post
+                </a></li>
+                <li><a href="/categories.html#talk-ref">
+                    Talk
+                </a></li>
+            </ul>
+        </div>
+
+        <div  class="span2 offset1" >
+            <ul class="nav nav-pills nav-stacked"> 
+            <li class="nav-header">Connect</li>
+                <li><a href="https://github.com/liuggio" title="Giulio De Donato github projects"
+                       target="_blank"
+                       class="social"><img src="/assets/themes/readable-liuggio/img/github.png" width="13"> github</a></li>
+                <li><a href="http://twitter.com/liuggio" title="Giulio De Donato twitter page"
+                       target="_blank"
+                       class="social"><i class="icon-twitter"></i> twitter</a></li>
+                <li><a href="http://www.linkedin.com/profile/view?id=94597934"
+                       title="Giulio De Donato Linkedin profile" target="_blank"
+                       class="social">
+                       <i class="icon-linkedin"></i> linkedin</a></li>
+                <li><a href="http://www.slideshare.net/liuggio"
+                       title="Giulio De Donato slideshare presentations" target="_blank"
+                       class="social">
+                       <img src="/assets/themes/readable-liuggio/img/slide.png" width="13"> slideshare
+                       </a></li>
+            </ul>
+        </div>     
+      </div>
+      <p>© Giulio De Donato, 2013 — built with <a href="http://jekyllrb.com/">Jekyll.</a>
+          <a href="http://welcometothebundle.com/feed.xml" title="feed" target="_blank">RSS feed</a>.
+      </p>
+    </footer>
+
+<!-- /container -->
+<script src="/assets/themes/readable-liuggio/bootstrap/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/assets/themes/readable-liuggio/js/highlight.pack.js" type="text/javascript"></script>
+<script src="/assets/themes/readable-liuggio/js/uitotop-jquery-plugin.js" type="text/javascript"></script>
+<script src="/assets/themes/readable-liuggio/js/cloud.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    var links = document.links;
+    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+        if (links[i].hostname.replace("www.", "") != window.location.hostname.replace("www.", "") ) {
+            links[i].target = '_blank';
+        }
+    }
+
+    var links = document.links;
+    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+
+        if (links[i].href == 'http://www.slideshare.net/liuggio/rationally-boost-your-symfony2-application-with-caching-tips-and-monitoring') {
+
+            //dirty solution in order to add slideshare frame into github Jekyll
+            links[i].innerHTML = '<iframe src="http://www.slideshare.net/slideshow/embed_code/14625769?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe><div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/liuggio/rationally-boost-your-symfony2-application-with-caching-tips-and-monitoring/?no" title="Rationally boost your symfony2 application with caching tips and monitoring" target="_blank">Rationally boost your symfony2 application with caching tips and monitoring</a></div>';
+            break;
+        } else if (links[i].href == 'http://www.slideshare.net/liuggio/its-all-about-behaviour-also-in-php') {
+            links[i].innerHTML = '<iframe src="http://www.slideshare.net/slideshow/embed_code/27465974?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe><div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/liuggio/its-all-about-behaviour-also-in-php/?no" title="It is all about behaviour also in php. PHP loves BDD." target="_blank">It is all about behaviour also in php. PHP loves BDD.</a></div>';
+        } else if (links[i].href == 'http://www.slideshare.net/liuggio/design-pattern-symfony2') {
+            links[i].innerHTML = '<div class="centered center"><iframe src="http://www.slideshare.net/slideshow/embed_code/27449969?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe><div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/liuggio/design-pattern-symfony2/?no" title="Design pattern symfony2 - Nanos gigantium humeris insidentes" target="_blank">Design pattern Symfony2 - Nanos gigantium humeris insidentes</a></div></div>';
+        } else if (links[i].href == 'http://www.slideshare.net/liuggio/caching-and-data-analysis-will-move-your-symfony2-application-to-the-next-level') {
+            links[i].innerHTML = '<div class="centered center"><iframe src="http://www.slideshare.net/slideshow/embed_code/21395241?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe><div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/liuggio/caching-and-data-analysis-will-move-your-symfony2-application-to-the-next-level?no" title="Caching and data analysis will move your Symfony2 application to the next level" target="_blank">Caching and data analysis will move your Symfony2 application to the next level</a></div></div>';
+        }
+    }
+
+</script>
+<script type="text/javascript">
+  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+  analytics.load("wdoo4hzofo");
+</script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37195869-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+<script>
+    $(function () { // document ready
+        if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+            var stickyTop = $('.sticky').offset().top; // returns number
+            $(window).scroll(function () { // scroll event
+                $('#sticky-pagination').show().removeClass("hidden");
+                var windowTop = $(window).scrollTop(); // returns number
+                if (stickyTop < windowTop) {
+                    $('.sticky').css({ position:'fixed', top:0, right:0 });
+                    $('.sticky').addClass("well");
+                    $('.sticky .inner').show();
+
+                }
+                else {
+                    $('.sticky').css('position', 'static');
+                    $('.sticky').removeClass("well").addClass("span1");
+                    $('.sticky .inner').hide();
+                    $('#sticky-pagination').hide();
+                }
+            });
+        }
+    });
+</script>
+
+ <script>
+        //syntax highlight
+        $(document).ready(function() {
+            $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+        });
+    </script>
+<script type="text/javascript">
+    $.fn.tagcloud.defaults = {
+      size: {start: 10, end: 20, unit: 'px'},
+      color: {start: '#CD4540', end: '9C2520'}
+    };
+
+    $(function () {
+      $('ul.tag_box li a').tagcloud();
+    });
+</script>
+
+<script>
+$(document).ready(function() {
+    $('h2, h3, h4, h5').each(function(i, e) {
+        var a = '<a class="headerlink" href="#'+e.id+'" name="#'+e.id+'" title="Permalink to this headline">¶</a>';
+        $(e).append(a);
+    });
+});
+
+$().UItoTop();
+
+</script>
+
+
+</body>
+</html>
+
