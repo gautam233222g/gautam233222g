@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gautam233222g.github.io
+Token: 974f213ec6eecb9dbc29f9a41596fbf113471e61293b814c6fd111f20a04c99c
