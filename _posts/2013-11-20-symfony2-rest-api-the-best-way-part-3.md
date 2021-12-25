@@ -381,7 +381,7 @@ We have now to modify the functional tests adding the authentication:
         $this->client = static::createClient(array(), $this->auth);
     }
 
-**EDITED 2-gen-2014** 
+**EDITED 2-gen-2020** 
 
 Adding `disable_csrf_role` you should add the basic auth to the CURL call:
 

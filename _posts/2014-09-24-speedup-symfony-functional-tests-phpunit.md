@@ -5,8 +5,8 @@ description: "No more slow test suite"
 category: post
 published: true
 tags: [phpunit, fixture, test, functional]
-edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2014-09-24-speedup-symfony-functional-tests-phpunit.md
-date: 2014-09-30 08:00:01
+edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2020-09-24-speedup-symfony-functional-tests-phpunit.md
+date: 2020-09-30 08:00:01
 ---
 {% include JB/setup %}
 

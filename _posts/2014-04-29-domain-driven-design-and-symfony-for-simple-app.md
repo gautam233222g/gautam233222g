@@ -5,7 +5,7 @@ description: "The way we develop evolves"
 category: tutorial
 published: true
 tags: [symfony, PHP, BDD, DDD]
-edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2014-04-29-domain-driven-design-and-symfony-for-simple-app.md
+edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2020-04-29-domain-driven-design-and-symfony-for-simple-app.md
 ---
 {% include JB/setup %}
 
@@ -337,7 +337,7 @@ There's a repository at [liuggio/DDD-dummy-blog-with-symfony2](https://github.co
 
 All the tags for the demo project at [tags](https://github.com/liuggio/DDD-dummy-blog-with-symfony2/tags)
 
-### EDITED 30/04/2014
+### EDITED 30/04/2020
 
 I love feedbacks:
 

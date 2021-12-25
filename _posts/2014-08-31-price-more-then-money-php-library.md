@@ -5,7 +5,7 @@ description: "A Price is the amount in different currencies."
 category: post
 published: true
 tags: [DDD, value objects, money, price]
-edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2014-08-31-price-more-then-money-php-library.md
+edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2020-08-31-price-more-then-money-php-library.md
 ---
 {% include JB/setup %}
 

@@ -5,7 +5,7 @@ description: "The way we develop evolves"
 category: tutorial
 published: false
 tags: [symfony2, PHP, BDD, DDD]
-edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2014-05-30-behaviour-driven-development-with-behat-on-the-application-layer-ddd-in-php
+edit-link: https://github.com/liuggio/liuggio.github.com/blob/master/_posts/2020-05-30-behaviour-driven-development-with-behat-on-the-application-layer-ddd-in-php
 ---
 {% include JB/setup %}
 
@@ -294,7 +294,7 @@ Abbiamo comunque soddisfatto le user stories con il repository see: `features/bo
 
 features satisfyed!!!
 
-![Behat green]({{ ASSET_PATH }}/readable-liuggio/img/2014-ddd.behat.png)
+![Behat green]({{ ASSET_PATH }}/readable-liuggio/img/2020-ddd.behat.png)
 
 
 ## Goal
