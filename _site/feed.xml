@@ -180,7 +180,7 @@ This is very annoying and adding the option &lt;code&gt;--rerun-failed&lt;/code&
   &lt;li&gt;http://code.tutsplus.com/tutorials/parallel-testing-for-phpunit-with-paratest–net-32105&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-            <pubDate>Tue, 30 Sep 2014 08:00:01 +0000</pubDate>
+            <pubDate>Tue, 30 Sep 2020 08:00:01 +0000</pubDate>
             <link>http://welcometothebundle.com//speedup-symfony-functional-tests-phpunit</link>
             <guid isPermaLink="true">http://welcometothebundle.com//speedup-symfony-functional-tests-phpunit</guid>
         </item>
@@ -357,7 +357,7 @@ var_dump($price-&amp;gt;availableCurrencies()); // will return array('EUR', 'USD
 
 &lt;p&gt;&lt;strong&gt;Enjoy&lt;/strong&gt; &lt;a href=&quot;https://github.com/leaphly/price&quot;&gt;github/leaphly/price&lt;/a&gt;.&lt;/p&gt;
 </description>
-            <pubDate>Sun, 31 Aug 2014 00:00:00 +0200</pubDate>
+            <pubDate>Sun, 31 Aug 2020 00:00:00 +0200</pubDate>
             <link>http://welcometothebundle.com//price-more-then-money-php-library</link>
             <guid isPermaLink="true">http://welcometothebundle.com//price-more-then-money-php-library</guid>
         </item>
@@ -400,7 +400,7 @@ clicking on the button  &lt;code&gt;Fix&lt;/code&gt; on the right.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;ARTICLE&lt;/code&gt; - Instead of using these low-level components, you can use the ready-to-be-used Symfony2 full-stack web framework, which is based on these components… or you can create your very own framework. This series is about the latter.&lt;/p&gt;
 
-&lt;h6 id=&quot;php-uk-conference-2014---mathias-verraes---unbreakable-domain-modelshttpswwwyoutubecomwatchvzj63ltuwmae&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZJ63ltuwMaE&quot;&gt;PHP UK Conference 2014 - Mathias Verraes - Unbreakable Domain Models&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;php-uk-conference-2020---mathias-verraes---unbreakable-domain-modelshttpswwwyoutubecomwatchvzj63ltuwmae&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZJ63ltuwMaE&quot;&gt;PHP UK Conference 2020 - Mathias Verraes - Unbreakable Domain Models&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - Tutto il blog di Mathias è pieno di spunti.&lt;/p&gt;
 
@@ -460,7 +460,7 @@ clicking on the button  &lt;code&gt;Fix&lt;/code&gt; on the right.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://cleancoders.com/category/fundamentals&quot;&gt;Clean Coders&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-            <pubDate>Mon, 05 May 2014 00:00:00 +0200</pubDate>
+            <pubDate>Mon, 05 May 2020 00:00:00 +0200</pubDate>
             <link>http://welcometothebundle.com//best-resources-about-symfony-tdd-bdd-ddd-methologies</link>
             <guid isPermaLink="true">http://welcometothebundle.com//best-resources-about-symfony-tdd-bdd-ddd-methologies</guid>
         </item>
@@ -814,7 +814,7 @@ git checkout -f part-1
 
 &lt;p&gt;All the tags for the demo project at &lt;a href=&quot;https://github.com/liuggio/DDD-dummy-blog-with-symfony2/tags&quot;&gt;tags&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;edited-30042014&quot;&gt;EDITED 30/04/2014&lt;/h3&gt;
+&lt;h3 id=&quot;edited-30042020&quot;&gt;EDITED 30/04/2020&lt;/h3&gt;
 
 &lt;p&gt;I love feedbacks:&lt;/p&gt;
 
@@ -832,7 +832,7 @@ and how to works with Symfony2 in the &lt;strong&gt;Infrastructure layer&lt;/str
 
 &lt;p&gt;Stay tuned and tweet if you want the next episode.&lt;/p&gt;
 </description>
-            <pubDate>Tue, 29 Apr 2014 00:00:00 +0200</pubDate>
+            <pubDate>Tue, 29 Apr 2020 00:00:00 +0200</pubDate>
             <link>http://welcometothebundle.com//domain-driven-design-and-symfony-for-simple-app</link>
             <guid isPermaLink="true">http://welcometothebundle.com//domain-driven-design-and-symfony-for-simple-app</guid>
         </item>
@@ -940,7 +940,7 @@ class Money
 
 &lt;p&gt;That’s all, thanks Domain Driven Design and Doctrine community.&lt;/p&gt;
 </description>
-            <pubDate>Fri, 21 Mar 2014 00:00:00 +0100</pubDate>
+            <pubDate>Fri, 21 Mar 2020 00:00:00 +0100</pubDate>
             <link>http://welcometothebundle.com//persist-the-money-doctrine-value-object</link>
             <guid isPermaLink="true">http://welcometothebundle.com//persist-the-money-doctrine-value-object</guid>
         </item>
@@ -1341,7 +1341,7 @@ public function setUp()
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;EDITED 2-gen-2014&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EDITED 2-gen-2020&lt;/strong&gt; &lt;/p&gt;
 
 &lt;p&gt;Adding &lt;code&gt;disable_csrf_role&lt;/code&gt; you should add the basic auth to the CURL call:&lt;/p&gt;
 

@@ -4,7 +4,7 @@
  <title>Welcome to the bundle</title>
  <link href="http://welcometothebundle.com/atom.xml" rel="self"/>
  <link href="http://welcometothebundle.com"/>
- <updated>2014-09-30T08:42:05+02:00</updated>
+ <updated>2020-09-30T08:42:05+02:00</updated>
  <id>http://welcometothebundle.com</id>
  <author>
    <name>liuggio</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Speed up PHPUnit and functional tests with Symfony and fastest</title>
    <link href="http://welcometothebundle.com/speedup-symfony-functional-tests-phpunit"/>
-   <updated>2014-09-30T08:00:01Z</updated>
+   <updated>2020-09-30T08:00:01Z</updated>
    <id>http://welcometothebundle.com/speedup-symfony-functional-tests-phpunit</id>
    <content type="html">
 &lt;p&gt;Once in a while a 35 minutes test suite reached 7 minutes thanks to a magician called &lt;code&gt;fastest&lt;/code&gt;&lt;/p&gt;
@@ -194,7 +194,7 @@ This is very annoying and adding the option &lt;code&gt;--rerun-failed&lt;/code&
  <entry>
    <title>Price: more then Money - PHP library</title>
    <link href="http://welcometothebundle.com/price-more-then-money-php-library"/>
-   <updated>2014-08-31T00:00:00+02:00</updated>
+   <updated>2020-08-31T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/price-more-then-money-php-library</id>
    <content type="html">
 &lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
@@ -371,7 +371,7 @@ var_dump($price-&amp;gt;availableCurrencies()); // will return array('EUR', 'USD
  <entry>
    <title>(my) Best resources about methodologies on Symfony, PHP, DDD, BDD ...</title>
    <link href="http://welcometothebundle.com/best-resources-about-symfony-tdd-bdd-ddd-methologies"/>
-   <updated>2014-05-05T00:00:00+02:00</updated>
+   <updated>2020-05-05T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/best-resources-about-symfony-tdd-bdd-ddd-methologies</id>
    <content type="html">
 &lt;p&gt;The Internet is full of content, and sometimes filter them and find the most important article takes time.&lt;/p&gt;
@@ -409,7 +409,7 @@ clicking on the button  &lt;code&gt;Fix&lt;/code&gt; on the right.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;ARTICLE&lt;/code&gt; - Instead of using these low-level components, you can use the ready-to-be-used Symfony2 full-stack web framework, which is based on these components… or you can create your very own framework. This series is about the latter.&lt;/p&gt;
 
-&lt;h6 id=&quot;php-uk-conference-2014---mathias-verraes---unbreakable-domain-modelshttpswwwyoutubecomwatchvzj63ltuwmae&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZJ63ltuwMaE&quot;&gt;PHP UK Conference 2014 - Mathias Verraes - Unbreakable Domain Models&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;php-uk-conference-2020---mathias-verraes---unbreakable-domain-modelshttpswwwyoutubecomwatchvzj63ltuwmae&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZJ63ltuwMaE&quot;&gt;PHP UK Conference 2020 - Mathias Verraes - Unbreakable Domain Models&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - Tutto il blog di Mathias è pieno di spunti.&lt;/p&gt;
 
@@ -474,7 +474,7 @@ clicking on the button  &lt;code&gt;Fix&lt;/code&gt; on the right.&lt;/p&gt;
  <entry>
    <title>Domain Driven Design principles with Symfony2 also for dummy applications</title>
    <link href="http://welcometothebundle.com/domain-driven-design-and-symfony-for-simple-app"/>
-   <updated>2014-04-29T00:00:00+02:00</updated>
+   <updated>2020-04-29T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/domain-driven-design-and-symfony-for-simple-app</id>
    <content type="html">
 &lt;h3 id=&quot;part-1---the-new-flow-the-layered-architecture-and-the-entities&quot;&gt;Part 1 - The new flow, the layered architecture and the entities.&lt;/h3&gt;
@@ -823,7 +823,7 @@ git checkout -f part-1
 
 &lt;p&gt;All the tags for the demo project at &lt;a href=&quot;https://github.com/liuggio/DDD-dummy-blog-with-symfony2/tags&quot;&gt;tags&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;edited-30042014&quot;&gt;EDITED 30/04/2014&lt;/h3&gt;
+&lt;h3 id=&quot;edited-30042020&quot;&gt;EDITED 30/04/2020&lt;/h3&gt;
 
 &lt;p&gt;I love feedbacks:&lt;/p&gt;
 
@@ -846,7 +846,7 @@ and how to works with Symfony2 in the &lt;strong&gt;Infrastructure layer&lt;/str
  <entry>
    <title>Persist the Money, Doctrine Value Object</title>
    <link href="http://welcometothebundle.com/persist-the-money-doctrine-value-object"/>
-   <updated>2014-03-21T00:00:00+01:00</updated>
+   <updated>2020-03-21T00:00:00+01:00</updated>
    <id>http://welcometothebundle.com/persist-the-money-doctrine-value-object</id>
    <content type="html">
 &lt;p&gt;Working on large projects, I noticed that we lose too much time thinking about the famous ‘M’ of the &lt;em&gt;MVC&lt;/em&gt; pattern 
@@ -1350,7 +1350,7 @@ public function setUp()
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;EDITED 2-gen-2014&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EDITED 2-gen-2020&lt;/strong&gt; &lt;/p&gt;
 
 &lt;p&gt;Adding &lt;code&gt;disable_csrf_role&lt;/code&gt; you should add the basic auth to the CURL call:&lt;/p&gt;
 
