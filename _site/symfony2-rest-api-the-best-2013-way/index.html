@@ -280,7 +280,7 @@
           <div class="span1 right bottom sticky center">
               
               <div id="edit-github">
-                  <a class="btn btn-mini" target="_blank" href="https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-11-09-symfony2-rest-api-the-best-2013-way.md" title="Found a typo? Please edit it on Github"><i class="icon-edit pull-left"></i><b>Fix</b></a>
+                  <a class="btn btn-mini" target="_blank" href="https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-11-09-symfony2-rest-api-the-best-2019-way.md" title="Found a typo? Please edit it on Github"><i class="icon-edit pull-left"></i><b>Fix</b></a>
               </div>
               
 
@@ -314,7 +314,7 @@
         <hr>
         <div class="row">
             <div class="span4">
-                <div class="date"><span>13 November 2013</span></div>
+                <div class="date"><span>13 November 2019</span></div>
             </div>
 
             <div class="span5">
@@ -377,10 +377,10 @@ and the last article <a href="/symfony2-rest-api-the-best-way-part-3/">Part3 - T
 
 <h2 id="the-github-repository">The github repository</h2>
 
-<p>There’s a repository at <a href="https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/">liuggio/symfony2-rest-api-the-best-2013-way</a>
+<p>There’s a repository at <a href="https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/">liuggio/symfony2-rest-api-the-best-2019-way</a>
 you could see the working code using the tag <code>part1</code> with</p>
 
-<pre><code>php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+<pre><code>php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
 cd blog-rest-symfony2
 git checkout -f part1
 php app/console doctrine:database:create
@@ -388,7 +388,7 @@ php app/console doctrine:schema:create
 bin/phpunit -c app
 </code></pre>
 
-<p>All the tags for the demo project at <a href="https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags">tags</a></p>
+<p>All the tags for the demo project at <a href="https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags">tags</a></p>
 
 <h2 id="step-1a-the-application">Step 1.A The application</h2>
 
@@ -470,7 +470,7 @@ class PageController extends FOSRestController
 }
 </code></pre>
 
-<h4 id="edit-14112013-samuel-gordalina-suggests"><strong>EDIT-14/11/2013</strong> Samuel Gordalina suggests:</h4>
+<h4 id="edit-14112019-samuel-gordalina-suggests"><strong>EDIT-14/11/2019</strong> Samuel Gordalina suggests:</h4>
 
 <p>You can use ParamConverter which fetches an entity from database or returns a 404 exception.
 For more info see <a href="https://github.com/gordalina/sample-twitter-api-symfony2/blob/master/src/Twitter/ApiBundle/Controller/TweetController.php#L37">sample-twitter-api-symfony2:37</a></p>
@@ -723,12 +723,12 @@ public function getPageAction($id)
 
 <p>We will have a <code>500</code> because the database is empty, and that resource doesn’t exists:</p>
 
-<pre><code>--2013-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
+<pre><code>--2019-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
 Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
 HTTP request sent, awaiting response... 
   HTTP/1.0 500 Internal Server Error
   Content-type: text/html
-2013-11-09 15:46:37 ERROR 500: Internal Server Error.
+2019-11-09 15:46:37 ERROR 500: Internal Server Error.
 </code></pre>
 
 <p>The resource ‘0’ doesn’t exists,
@@ -769,7 +769,7 @@ if the page <code>10</code> is at <code>/api/v1/pages/10</code>, you may want to
 not specifying the <code>format</code> explicitly in the extension <code>/api/v1/pages/10.html</code>, but instead using HTTP <code>Accept</code> header.</p>
 
 <p>[EDIT] removed the tags content-negotiation.
-If you want to play with the rest application without the extension, set false to <code>prefer_extension</code> here:<code>https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/blob/master/app/config/config.yml#L102</code>.</p>
+If you want to play with the rest application without the extension, set false to <code>prefer_extension</code> here:<code>https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/blob/master/app/config/config.yml#L102</code>.</p>
 
 <p>Request: <code>curl -i localhost:8000/api/v1/pages/10</code>
 No Accept header is sent so the fallback is <code>text/html</code></p>
@@ -959,7 +959,7 @@ We understood the importance of Content Negotiation.</p>
             </ul>
         </div>     
       </div>
-      <p>© Giulio De Donato, 2013 — built with <a href="http://jekyllrb.com/">Jekyll.</a>
+      <p>© Giulio De Donato, 2019 — built with <a href="http://jekyllrb.com/">Jekyll.</a>
           <a href="http://welcometothebundle.com/feed.xml" title="feed" target="_blank">RSS feed</a>.
       </p>
     </footer>

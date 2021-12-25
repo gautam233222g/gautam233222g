@@ -4,7 +4,7 @@ title: "Caching and data analysis will move your application to the next level"
 description: "If you don't ignore data you could find a business value."
 category: talk
 tags: [symfony2, cache, statsd, doctrine]
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-05-17-caching-and-data-analysis-will-move-your-application-to-the-next-level.md
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-05-17-caching-and-data-analysis-will-move-your-application-to-the-next-level.md
 ---
 {% include JB/setup %}
 

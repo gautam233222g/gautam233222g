@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2013-Software Team Manifesto"
+title: "2019-Software Team Manifesto"
 description: ""
 category: post
 tags: [tvision, team, coding, PHP]
@@ -16,7 +16,7 @@ In the chaos of the implicit, a programmer who joins a team must have a common l
 
 There is a level 0, a common and accepted (or imposed by the architect) knowledge.
 
-This document defines the concepts and guidelines to follow in order to be a developer who can work in a software team in 2013.
+This document defines the concepts and guidelines to follow in order to be a developer who can work in a software team in 2019.
 
 I think that you are already proficient with this notions.
 

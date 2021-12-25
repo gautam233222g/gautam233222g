@@ -5,7 +5,7 @@ description: "Tracking policy"
 category: post
 tags: [doctrine2, PHP]
 published: true
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-04-23-doctrine2-tracking-policy.md
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-04-23-doctrine2-tracking-policy.md
 ---
 {% include JB/setup %}
 

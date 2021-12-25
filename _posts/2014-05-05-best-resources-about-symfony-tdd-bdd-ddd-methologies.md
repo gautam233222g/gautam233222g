@@ -19,23 +19,23 @@ clicking on the button  `Fix` on the right.
 
 #### Symfony2 Ecosystem
 
-###### [2013 - william durand - ddd symfony2 folder structure and code first](http://williamdurand.fr/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/)
+###### [2019 - william durand - ddd symfony2 folder structure and code first](http://williamdurand.fr/2019/08/07/ddd-with-symfony2-folder-structure-and-code-first/)
 
 `ARTICLE` - [@couac](https://twitter.com/couac) wrote a lot of articles about best practices and methologies, his blog is a must to read for a PHP developer.
 
-###### [2013 - Dave Marshall - Silex: An implementation detail](http://www.youtube.com/watch?v=bTawx0TGIj8)
+###### [2019 - Dave Marshall - Silex: An implementation detail](http://www.youtube.com/watch?v=bTawx0TGIj8)
 
 `VIDEO` - An unexpected and very clear presentation on Domain Driven Design with Silex.
 
-###### [2013 - Marcello Duarte & Konstantin Kudryashov - The Framework as an implementation Detail](https://www.youtube.com/watch?v=0L_9NutiJlc)
+###### [2019 - Marcello Duarte & Konstantin Kudryashov - The Framework as an implementation Detail](https://www.youtube.com/watch?v=0L_9NutiJlc)
 
 `VIDEO` - An introduction to the hexagonal architecture and Symfony2.
 
-###### [2013 - Benjamin Eberlei - Functional Testing with Symfony2](https://www.youtube.com/watch?v=fVdlKl3ZZvM)
+###### [2019 - Benjamin Eberlei - Functional Testing with Symfony2](https://www.youtube.com/watch?v=fVdlKl3ZZvM)
 
 `VIDEO` - If I had seen this video in 2009, I would have spent the time to structure the test in a better way
 
-###### [2013 - Benjamin Eberlei - Decouple your application with (Domain-)Events](https://www.youtube.com/watch?v=K9jub4JPpcc)
+###### [2019 - Benjamin Eberlei - Decouple your application with (Domain-)Events](https://www.youtube.com/watch?v=K9jub4JPpcc)
 
 `VIDEO` - Decouple, decouple, decouple.
 

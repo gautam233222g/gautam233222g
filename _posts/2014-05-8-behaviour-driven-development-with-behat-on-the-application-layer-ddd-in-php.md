@@ -142,7 +142,7 @@ Riprendo @couac:
 	In DDD, we don't consider any databases. DDD is all about the domain, not about the database, and Persistence Ignorance (PI) is a very important aspect of DDD.
 <br>...<br>
 	With Persistence Ignorance, we try and eliminate all knowledge from our business objects of how, where, why or even if they will be stored somewhere. <br>Persistence Ignorance means that the business logic itself doesn't know about persistence. In other words, your Entities should not be tied to any persistence layer or framework.<br>
-<small><a href="http://williamdurand.fr/2013/08/20/ddd-with-symfony2-making-things-clear/">williamdurand/making-things-clear</a></small>
+<small><a href="http://williamdurand.fr/2019/08/20/ddd-with-symfony2-making-things-clear/">williamdurand/making-things-clear</a></small>
 </blockquote>
 
 Se vengono creati repository con della logica o delle operazioni, stiamo dando troppa responsabilità al repository, che dovrebbe essere solo la terra di mezzo, tra i dati e lo storage.

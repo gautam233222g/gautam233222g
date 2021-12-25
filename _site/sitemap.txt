@@ -14,7 +14,7 @@ http://welcometothebundle.com/domain-driven-design-and-symfony-for-simple-app
 http://welcometothebundle.com/persist-the-money-doctrine-value-object
 http://welcometothebundle.com/symfony2-rest-api-the-best-way-part-3
 http://welcometothebundle.com/web-api-rest-with-symfony2-the-best-way-the-post-method
-http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way
+http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way
 http://welcometothebundle.com/symfony2-design-patterns
 http://welcometothebundle.com/design-by-contract-behaviour
 http://welcometothebundle.com/caching-and-data-analysis-will-move-your-application-to-the-next-level

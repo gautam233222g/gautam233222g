@@ -4,8 +4,8 @@ title: "Symfony2 REST API: the best way"
 description: "REST API tutorial on symfony2"
 category: tutorial
 tags: [rest, api, symfony2]
-date: 2013-11-13 13:00:00
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-11-09-symfony2-rest-api-the-best-2013-way.md
+date: 2019-11-13 13:00:00
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-11-09-symfony2-rest-api-the-best-2019-way.md
 ---
 {% include JB/setup %}
 
@@ -41,17 +41,17 @@ The real objective is create an application that shows some best practices and r
 
 ## The github repository
 
-There's a repository at [liuggio/symfony2-rest-api-the-best-2013-way](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/)
+There's a repository at [liuggio/symfony2-rest-api-the-best-2019-way](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/)
 you could see the working code using the tag `part1` with
 
-    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
     cd blog-rest-symfony2
     git checkout -f part1
     php app/console doctrine:database:create
     php app/console doctrine:schema:create
     bin/phpunit -c app
 
-All the tags for the demo project at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags)
+All the tags for the demo project at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags)
 
 ## Step 1.A The application
 
@@ -132,7 +132,7 @@ and then we add a simple and dirty function (we'll refactor soon)
         return $this->container->get('doctrine.entity_manager')->getRepository('Page')->find($id);
     }
 
-#### **EDIT-14/11/2013** Samuel Gordalina suggests:
+#### **EDIT-14/11/2019** Samuel Gordalina suggests:
 
 You can use ParamConverter which fetches an entity from database or returns a 404 exception.
 For more info see [sample-twitter-api-symfony2:37](https://github.com/gordalina/sample-twitter-api-symfony2/blob/master/src/Twitter/ApiBundle/Controller/TweetController.php#L37)
@@ -373,12 +373,12 @@ and then accessing to the the resource with `wget`
 
 We will have a `500` because the database is empty, and that resource doesn't exists:
 
-    --2013-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
+    --2019-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
     Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
     HTTP request sent, awaiting response... 
       HTTP/1.0 500 Internal Server Error
       Content-type: text/html
-    2013-11-09 15:46:37 ERROR 500: Internal Server Error.
+    2019-11-09 15:46:37 ERROR 500: Internal Server Error.
 
 The resource '0' doesn't exists,
 but we want that the status codes reflects the application behaviour,
@@ -417,7 +417,7 @@ if the page `10` is at `/api/v1/pages/10`, you may want to retrieve the same res
 not specifying the `format` explicitly in the extension `/api/v1/pages/10.html`, but instead using HTTP `Accept` header.
 
 [EDIT] removed the tags content-negotiation.
-If you want to play with the rest application without the extension, set false to `prefer_extension` here:`https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/blob/master/app/config/config.yml#L102`.
+If you want to play with the rest application without the extension, set false to `prefer_extension` here:`https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/blob/master/app/config/config.yml#L102`.
 
 Request: `curl -i localhost:8000/api/v1/pages/10`
 No Accept header is sent so the fallback is `text/html`

@@ -385,23 +385,23 @@ clicking on the button  &lt;code&gt;Fix&lt;/code&gt; on the right.&lt;/p&gt;
 
 &lt;h4 id=&quot;symfony2-ecosystem&quot;&gt;Symfony2 Ecosystem&lt;/h4&gt;
 
-&lt;h6 id=&quot;william-durand---ddd-symfony2-folder-structure-and-code-firsthttpwilliamdurandfr20130807ddd-with-symfony2-folder-structure-and-code-first&quot;&gt;&lt;a href=&quot;http://williamdurand.fr/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/&quot;&gt;2013 - william durand - ddd symfony2 folder structure and code first&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;william-durand---ddd-symfony2-folder-structure-and-code-firsthttpwilliamdurandfr20190807ddd-with-symfony2-folder-structure-and-code-first&quot;&gt;&lt;a href=&quot;http://williamdurand.fr/2019/08/07/ddd-with-symfony2-folder-structure-and-code-first/&quot;&gt;2019 - william durand - ddd symfony2 folder structure and code first&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;ARTICLE&lt;/code&gt; - &lt;a href=&quot;https://twitter.com/couac&quot;&gt;@couac&lt;/a&gt; wrote a lot of articles about best practices and methologies, his blog is a must to read for a PHP developer.&lt;/p&gt;
 
-&lt;h6 id=&quot;dave-marshall---silex-an-implementation-detailhttpwwwyoutubecomwatchvbtawx0tgij8&quot;&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=bTawx0TGIj8&quot;&gt;2013 - Dave Marshall - Silex: An implementation detail&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;dave-marshall---silex-an-implementation-detailhttpwwwyoutubecomwatchvbtawx0tgij8&quot;&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=bTawx0TGIj8&quot;&gt;2019 - Dave Marshall - Silex: An implementation detail&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - An unexpected and very clear presentation on Domain Driven Design with Silex.&lt;/p&gt;
 
-&lt;h6 id=&quot;marcello-duarte--konstantin-kudryashov---the-framework-as-an-implementation-detailhttpswwwyoutubecomwatchv0l9nutijlc&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0L_9NutiJlc&quot;&gt;2013 - Marcello Duarte &amp;amp; Konstantin Kudryashov - The Framework as an implementation Detail&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;marcello-duarte--konstantin-kudryashov---the-framework-as-an-implementation-detailhttpswwwyoutubecomwatchv0l9nutijlc&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0L_9NutiJlc&quot;&gt;2019 - Marcello Duarte &amp;amp; Konstantin Kudryashov - The Framework as an implementation Detail&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - An introduction to the hexagonal architecture and Symfony2.&lt;/p&gt;
 
-&lt;h6 id=&quot;benjamin-eberlei---functional-testing-with-symfony2httpswwwyoutubecomwatchvfvdlkl3zzvm&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fVdlKl3ZZvM&quot;&gt;2013 - Benjamin Eberlei - Functional Testing with Symfony2&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;benjamin-eberlei---functional-testing-with-symfony2httpswwwyoutubecomwatchvfvdlkl3zzvm&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fVdlKl3ZZvM&quot;&gt;2019 - Benjamin Eberlei - Functional Testing with Symfony2&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - If I had seen this video in 2009, I would have spent the time to structure the test in a better way&lt;/p&gt;
 
-&lt;h6 id=&quot;benjamin-eberlei---decouple-your-application-with-domain-eventshttpswwwyoutubecomwatchvk9jub4jppcc&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=K9jub4JPpcc&quot;&gt;2013 - Benjamin Eberlei - Decouple your application with (Domain-)Events&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;benjamin-eberlei---decouple-your-application-with-domain-eventshttpswwwyoutubecomwatchvk9jub4jppcc&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=K9jub4JPpcc&quot;&gt;2019 - Benjamin Eberlei - Decouple your application with (Domain-)Events&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;code&gt;VIDEO&lt;/code&gt; - Decouple, decouple, decouple.&lt;/p&gt;
 
@@ -954,29 +954,29 @@ class Money
  <entry>
    <title>part 3 - Symfony2 API: the rest of REST</title>
    <link href="http://welcometothebundle.com/symfony2-rest-api-the-best-way-part-3"/>
-   <updated>2013-12-03T13:00:00Z</updated>
+   <updated>2019-12-03T13:00:00Z</updated>
    <id>http://welcometothebundle.com/symfony2-rest-api-the-best-way-part-3</id>
    <content type="html">
 &lt;h3 id=&quot;part-3---the-rest-of-rest&quot;&gt;Part 3 - the rest of rest.&lt;/h3&gt;
 
-&lt;p&gt;This is trilogy&amp;#8217;s final, in the part1 &amp;#8216;&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/&quot;&gt;best web API with Symfony2&lt;/a&gt;&amp;#8217; we created the application and the bundle, we wrote the &lt;code&gt;GET&lt;/code&gt; method, we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and smart services&amp;#8230;&lt;/p&gt;
+&lt;p&gt;This is trilogy&amp;#8217;s final, in the part1 &amp;#8216;&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/&quot;&gt;best web API with Symfony2&lt;/a&gt;&amp;#8217; we created the application and the bundle, we wrote the &lt;code&gt;GET&lt;/code&gt; method, we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and smart services&amp;#8230;&lt;/p&gt;
 
-&lt;p&gt;In the part2 &amp;#8216;&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/&quot;&gt;REST and Symfony the best way&lt;/a&gt;&amp;#8217; we created a new &lt;code&gt;Page&lt;/code&gt; via &lt;strong&gt;REST API&lt;/strong&gt;, we talked about &lt;code&gt;idempotent&lt;/code&gt; and &lt;code&gt;safe&lt;/code&gt; methods, and we understood how much the form is important&amp;#8230;&lt;/p&gt;
+&lt;p&gt;In the part2 &amp;#8216;&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/&quot;&gt;REST and Symfony the best way&lt;/a&gt;&amp;#8217; we created a new &lt;code&gt;Page&lt;/code&gt; via &lt;strong&gt;REST API&lt;/strong&gt;, we talked about &lt;code&gt;idempotent&lt;/code&gt; and &lt;code&gt;safe&lt;/code&gt; methods, and we understood how much the form is important&amp;#8230;&lt;/p&gt;
 
 &lt;p&gt;In this article we are going to show how to properly modify a given resource using &lt;code&gt;PUT&lt;/code&gt;,&lt;code&gt;PATCH&lt;/code&gt;, how to handle different role for the Page resource, and how to disable the CRSF protection only when using API.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-github-repository&quot;&gt;The github repository&lt;/h2&gt;
 
-&lt;p&gt;There&amp;#8217;s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2013-way&lt;/a&gt;
+&lt;p&gt;There&amp;#8217;s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2019-way&lt;/a&gt;
 you could see the working code using the tag &lt;code&gt;part3&lt;/code&gt; with&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
 cd blog-rest-symfony2
 git checkout -f part3
 bin/phpunit -c app
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;All the tags for the demo project are at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags&quot;&gt;tags&lt;/a&gt;, and also you could compare the 2 articles with &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/compare/part2...part3&quot;&gt;compare/part2&amp;#8230;part3&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All the tags for the demo project are at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags&quot;&gt;tags&lt;/a&gt;, and also you could compare the 2 articles with &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/compare/part2...part3&quot;&gt;compare/part2&amp;#8230;part3&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;this-is-a-crud-world&quot;&gt;This is a CRUD world&lt;/h2&gt;
 
@@ -1437,11 +1437,11 @@ it also validates and hydrates the object.&lt;/p&gt;
 
 &lt;p&gt;There are a lot of concepts about REST that I won&amp;#8217;t cover here like RESTFul, HAL, OAuth &amp;#8230;&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way&quot;&gt;repository&lt;/a&gt; contains all the functions and the tests that we have seen during those articles.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way&quot;&gt;repository&lt;/a&gt; contains all the functions and the tests that we have seen during those articles.&lt;/p&gt;
 
 &lt;h5 id=&quot;have-a-rest&quot;&gt;Have a REST.&lt;/h5&gt;
 
-&lt;p&gt;That is all for the 2013&lt;/p&gt;
+&lt;p&gt;That is all for the 2019&lt;/p&gt;
 
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
 
@@ -1455,7 +1455,7 @@ it also validates and hydrates the object.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://symfony.com/doc/current/cookbook/routing/method_parameters.html#faking-the-method-with-method&quot;&gt;Symfony Faking the Method&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://idbentley.com/blog/2013/03/14/should-restful-apis-include-relationships/&quot;&gt;should-restful-apis-include-relationships/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://idbentley.com/blog/2019/03/14/should-restful-apis-include-relationships/&quot;&gt;should-restful-apis-include-relationships/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;best-practices-for-a-pragmatic-restful-api&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -1464,12 +1464,12 @@ it also validates and hydrates the object.&lt;/p&gt;
  <entry>
    <title>part2 - Web API REST with Symfony2</title>
    <link href="http://welcometothebundle.com/web-api-rest-with-symfony2-the-best-way-the-post-method"/>
-   <updated>2013-11-16T13:00:00Z</updated>
+   <updated>2019-11-16T13:00:00Z</updated>
    <id>http://welcometothebundle.com/web-api-rest-with-symfony2-the-best-way-the-post-method</id>
    <content type="html">
 &lt;h3 id=&quot;part-2---the-post&quot;&gt;Part 2 - the &lt;code&gt;POST&lt;/code&gt;&lt;/h3&gt;
 
-&lt;p&gt;In the ‘&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/&quot;&gt;Symfony2 REST part 1&lt;/a&gt;’ we created the application,
+&lt;p&gt;In the ‘&lt;a href=&quot;http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/&quot;&gt;Symfony2 REST part 1&lt;/a&gt;’ we created the application,
 the bundle, we talked about the &lt;code&gt;GET&lt;/code&gt; method,
 we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and brain services.&lt;/p&gt;
 
@@ -1480,21 +1480,21 @@ we also talked about the importance of the Interfaces, the content negotiation, 
 &lt;p&gt;&lt;strong&gt;Edited&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;3/12/2013: Added the Request in the actions, thanks to &lt;a href=&quot;http://twitter.com/stloyd&quot;&gt;stloyd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;3/12/2019: Added the Request in the actions, thanks to &lt;a href=&quot;http://twitter.com/stloyd&quot;&gt;stloyd&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-github-repository&quot;&gt;The github repository&lt;/h2&gt;
 
-&lt;p&gt;There’s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2013-way&lt;/a&gt;
+&lt;p&gt;There’s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2019-way&lt;/a&gt;
 you could see the working code using the tag &lt;code&gt;part2&lt;/code&gt; with&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
 cd blog-rest-symfony2
 git checkout -f part2
 bin/phpunit -c app
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;All the tags for the demo project are at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags&quot;&gt;tags&lt;/a&gt;, and also you could compare the first 2 articles with &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/compare/part1...part2&quot;&gt;compare/part1…part2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All the tags for the demo project are at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags&quot;&gt;tags&lt;/a&gt;, and also you could compare the first 2 articles with &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/compare/part1...part2&quot;&gt;compare/part1…part2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;http-bang-theory&quot;&gt;HTTP-bang theory&lt;/h2&gt;
 
@@ -1834,7 +1834,7 @@ private function processForm(PageInterface $page, array $parameters, $method = &
 &lt;p&gt;This function returns an object of &lt;code&gt;PageInterface&lt;/code&gt; type, but if the parameters are not valid it
 throws an &lt;code&gt;InvalidFormException&lt;/code&gt; that will be handled and caught by the controller.&lt;/p&gt;
 
-&lt;p&gt;The test class is at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/blob/part2/src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php/&quot;&gt;part2-src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The test class is at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/blob/part2/src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php/&quot;&gt;part2-src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;why-dont-use-the-request&quot;&gt;Why don’t use the request?&lt;/h3&gt;
 
@@ -2193,9 +2193,9 @@ we will talk how use other important HTTP headers, we will play with &lt;code&gt
  
  <entry>
    <title>Symfony2 REST API: the best way</title>
-   <link href="http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way"/>
-   <updated>2013-11-13T13:00:00Z</updated>
-   <id>http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way</id>
+   <link href="http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way"/>
+   <updated>2019-11-13T13:00:00Z</updated>
+   <id>http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way</id>
    <content type="html">
 &lt;h3 id=&quot;part-1---the-get&quot;&gt;Part 1 - the &lt;code&gt;GET&lt;/code&gt;&lt;/h3&gt;
 
@@ -2231,10 +2231,10 @@ and the last article &lt;a href=&quot;/symfony2-rest-api-the-best-way-part-3/&qu
 
 &lt;h2 id=&quot;the-github-repository&quot;&gt;The github repository&lt;/h2&gt;
 
-&lt;p&gt;There’s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2013-way&lt;/a&gt;
+&lt;p&gt;There’s a repository at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/&quot;&gt;liuggio/symfony2-rest-api-the-best-2019-way&lt;/a&gt;
 you could see the working code using the tag &lt;code&gt;part1&lt;/code&gt; with&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+&lt;pre&gt;&lt;code&gt;php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
 cd blog-rest-symfony2
 git checkout -f part1
 php app/console doctrine:database:create
@@ -2242,7 +2242,7 @@ php app/console doctrine:schema:create
 bin/phpunit -c app
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;All the tags for the demo project at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags&quot;&gt;tags&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All the tags for the demo project at &lt;a href=&quot;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags&quot;&gt;tags&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1a-the-application&quot;&gt;Step 1.A The application&lt;/h2&gt;
 
@@ -2324,7 +2324,7 @@ class PageController extends FOSRestController
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&quot;edit-14112013-samuel-gordalina-suggests&quot;&gt;&lt;strong&gt;EDIT-14/11/2013&lt;/strong&gt; Samuel Gordalina suggests:&lt;/h4&gt;
+&lt;h4 id=&quot;edit-14112019-samuel-gordalina-suggests&quot;&gt;&lt;strong&gt;EDIT-14/11/2019&lt;/strong&gt; Samuel Gordalina suggests:&lt;/h4&gt;
 
 &lt;p&gt;You can use ParamConverter which fetches an entity from database or returns a 404 exception.
 For more info see &lt;a href=&quot;https://github.com/gordalina/sample-twitter-api-symfony2/blob/master/src/Twitter/ApiBundle/Controller/TweetController.php#L37&quot;&gt;sample-twitter-api-symfony2:37&lt;/a&gt;&lt;/p&gt;
@@ -2577,12 +2577,12 @@ public function getPageAction($id)
 
 &lt;p&gt;We will have a &lt;code&gt;500&lt;/code&gt; because the database is empty, and that resource doesn’t exists:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;--2013-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
+&lt;pre&gt;&lt;code&gt;--2019-11-09 15:46:37--  http://localhost:8000/api/v1/pages/0.html
 Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
 HTTP request sent, awaiting response... 
   HTTP/1.0 500 Internal Server Error
   Content-type: text/html
-2013-11-09 15:46:37 ERROR 500: Internal Server Error.
+2019-11-09 15:46:37 ERROR 500: Internal Server Error.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The resource ‘0’ doesn’t exists,
@@ -2623,7 +2623,7 @@ if the page &lt;code&gt;10&lt;/code&gt; is at &lt;code&gt;/api/v1/pages/10&lt;/c
 not specifying the &lt;code&gt;format&lt;/code&gt; explicitly in the extension &lt;code&gt;/api/v1/pages/10.html&lt;/code&gt;, but instead using HTTP &lt;code&gt;Accept&lt;/code&gt; header.&lt;/p&gt;
 
 &lt;p&gt;[EDIT] removed the tags content-negotiation.
-If you want to play with the rest application without the extension, set false to &lt;code&gt;prefer_extension&lt;/code&gt; here:&lt;code&gt;https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/blob/master/app/config/config.yml#L102&lt;/code&gt;.&lt;/p&gt;
+If you want to play with the rest application without the extension, set false to &lt;code&gt;prefer_extension&lt;/code&gt; here:&lt;code&gt;https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/blob/master/app/config/config.yml#L102&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Request: &lt;code&gt;curl -i localhost:8000/api/v1/pages/10&lt;/code&gt;
 No Accept header is sent so the fallback is &lt;code&gt;text/html&lt;/code&gt;&lt;/p&gt;
@@ -2694,7 +2694,7 @@ We understood the importance of Content Negotiation.&lt;/p&gt;
  <entry>
    <title>Symfony2 design patterns @ symfonyday</title>
    <link href="http://welcometothebundle.com/symfony2-design-patterns"/>
-   <updated>2013-10-18T00:00:00+02:00</updated>
+   <updated>2019-10-18T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/symfony2-design-patterns</id>
    <content type="html">
 &lt;p&gt;I had the good fortune of being able to speech for the second time in a row,
@@ -2709,7 +2709,7 @@ on the Symfony-Day conference.&lt;/p&gt;
  <entry>
    <title>Design by contract behaviour</title>
    <link href="http://welcometothebundle.com/design-by-contract-behaviour"/>
-   <updated>2013-09-11T00:00:00+02:00</updated>
+   <updated>2019-09-11T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/design-by-contract-behaviour</id>
    <content type="html">
 &lt;p&gt;In recent years, &lt;a href=&quot;http://getcomposer.org&quot;&gt;Composer&lt;/a&gt; has given a breath of freshness to the dependencies, and framework such as &lt;a href=&quot;http://www.symfony.com&quot;&gt;Symfony2&lt;/a&gt;
@@ -2828,7 +2828,7 @@ but hard-coding namespaces and dependencies is not the best option.&lt;/p&gt;
  <entry>
    <title>Caching and data analysis will move your application to the next level</title>
    <link href="http://welcometothebundle.com/caching-and-data-analysis-will-move-your-application-to-the-next-level"/>
-   <updated>2013-05-17T00:00:00+02:00</updated>
+   <updated>2019-05-17T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/caching-and-data-analysis-will-move-your-application-to-the-next-level</id>
    <content type="html">
 &lt;h3 id=&quot;if-you-dont-ignore-data-you-could-find-a-business-value&quot;&gt;If you don&amp;#8217;t ignore data you could find a business value.&lt;/h3&gt;
@@ -2846,7 +2846,7 @@ but hard-coding namespaces and dependencies is not the best option.&lt;/p&gt;
  <entry>
    <title>Doctrine2 tracking policy</title>
    <link href="http://welcometothebundle.com/doctrine2-tracking-policy"/>
-   <updated>2013-04-23T00:00:00+02:00</updated>
+   <updated>2019-04-23T00:00:00+02:00</updated>
    <id>http://welcometothebundle.com/doctrine2-tracking-policy</id>
    <content type="html">
 &lt;h1 id=&quot;which-tracking-policy-are-you-using&quot;&gt;Which tracking policy are you using?&lt;/h1&gt;
@@ -2916,13 +2916,13 @@ but hard-coding namespaces and dependencies is not the best option.&lt;/p&gt;
  <entry>
    <title>It is all about behaviour also in php</title>
    <link href="http://welcometothebundle.com/it-is-all-about-behaviour-also-in-php"/>
-   <updated>2013-03-10T00:00:00+01:00</updated>
+   <updated>2019-03-10T00:00:00+01:00</updated>
    <id>http://welcometothebundle.com/it-is-all-about-behaviour-also-in-php</id>
    <content type="html">
 &lt;p&gt;It is a shame I never had energy to continue the BDD saga started with:
 &lt;a href=&quot;http://welcometothebundle.com/phpunit-vs-phpspec-theory-on-behaviour-driven-development&quot;&gt;phpunit-vs-phpspec-theory-on-behaviour-driven-development 1/3&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;During our monthly meeting at &lt;a href=&quot;http://roma.grusp.org/2013/03/incontro-di-febbraio-2013/&quot;&gt;Pug Roma&lt;/a&gt;,
+&lt;p&gt;During our monthly meeting at &lt;a href=&quot;http://roma.grusp.org/2019/03/incontro-di-febbraio-2019/&quot;&gt;Pug Roma&lt;/a&gt;,
 I have talked about php-spec and behaviour driven development.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/liuggio/its-all-about-behaviour-also-in-php&quot;&gt;phpspec/It is all about behaviour also in php&lt;/a&gt;&lt;/p&gt;
@@ -2933,7 +2933,7 @@ I have talked about php-spec and behaviour driven development.&lt;/p&gt;
  <entry>
    <title>The meaning of Cache for a web developer no more too many connection</title>
    <link href="http://welcometothebundle.com/the-meaning-of-cache-for-a-web-developer-no-more-too-many-connection"/>
-   <updated>2013-02-22T00:00:00+01:00</updated>
+   <updated>2019-02-22T00:00:00+01:00</updated>
    <id>http://welcometothebundle.com/the-meaning-of-cache-for-a-web-developer-no-more-too-many-connection</id>
    <content type="html">
 &lt;p&gt;In the place of Mr. Obvious I’m going to describe what really cache means, there is a lot of confusion between what the cache &lt;strong&gt;is&lt;/strong&gt;, what it &lt;strong&gt;does&lt;/strong&gt; and all the possible &lt;strong&gt;uses&lt;/strong&gt; and &lt;strong&gt;implementations&lt;/strong&gt;.&lt;/p&gt;
@@ -3093,7 +3093,7 @@ The enemy is the period of validity vs. freshness, and the size of the query.&lt
  <entry>
    <title>PHPUnit vs PHPSpec: theory on Behaviour Driven Development 1/3</title>
    <link href="http://welcometothebundle.com/phpunit-vs-phpspec-theory-on-behaviour-driven-development"/>
-   <updated>2013-01-05T00:00:00+01:00</updated>
+   <updated>2019-01-05T00:00:00+01:00</updated>
    <id>http://welcometothebundle.com/phpunit-vs-phpspec-theory-on-behaviour-driven-development</id>
    <content type="html">
 &lt;p&gt;The first part of a series of short articles (maybe three) where I’d like to share my tiny experience with BDD and in particular with PHPSpec.&lt;/p&gt;
@@ -3170,7 +3170,7 @@ and what it does is much more important.&lt;/p&gt;
 
 &lt;p&gt;• Test case example Becomes group&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt; You would be distracted by the code loosing focus on the result, and you might miss the concept of behaviour. [EDITED 07-01-2013 thanks to &lt;a href=&quot;http://twitter.com/euxpom&quot;&gt;euxpom &lt;img src=&quot;http://gravatar.com/avatar/77014411a56fa9c746d6a89b7fd96121?size=20&quot; alt=&quot;exupom&quot; /&gt;&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt; You would be distracted by the code loosing focus on the result, and you might miss the concept of behaviour. [EDITED 07-01-2019 thanks to &lt;a href=&quot;http://twitter.com/euxpom&quot;&gt;euxpom &lt;img src=&quot;http://gravatar.com/avatar/77014411a56fa9c746d6a89b7fd96121?size=20&quot; alt=&quot;exupom&quot; /&gt;&lt;/a&gt;]&lt;/p&gt;
 
 &lt;h2 id=&quot;phpspechttpsgithubcomphpspecphpspec2-advantages&quot;&gt;&lt;a href=&quot;https://github.com/phpspec/phpspec2&quot;&gt;PHPSpec&lt;/a&gt; advantages&lt;/h2&gt;
 
@@ -3202,7 +3202,7 @@ by David Chelimsky, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, D
  <entry>
    <title>Automate Test and Code Inspection in PHP with Guard, and Symfony2</title>
    <link href="http://welcometothebundle.com/automate-test-and-code-inspection-in-php-with-guard-and-symfony2"/>
-   <updated>2013-01-03T00:00:00+01:00</updated>
+   <updated>2019-01-03T00:00:00+01:00</updated>
    <id>http://welcometothebundle.com/automate-test-and-code-inspection-in-php-with-guard-and-symfony2</id>
    <content type="html">
 &lt;h2 id=&quot;hey-phper-do-you-automate-your-test&quot;&gt;Hey PHPer do you automate your test?&lt;/h2&gt;
@@ -3401,7 +3401,7 @@ In our first installment of the series we will present StatsDClientBundle writte
  </entry>
  
  <entry>
-   <title>2013-Software Team Manifesto</title>
+   <title>2019-Software Team Manifesto</title>
    <link href="http://welcometothebundle.com/tvision-team-manifesto"/>
    <updated>2012-09-16T16:09:12Z</updated>
    <id>http://welcometothebundle.com/tvision-team-manifesto</id>
@@ -3412,7 +3412,7 @@ In our first installment of the series we will present StatsDClientBundle writte
 
 &lt;p&gt;There is a level 0, a common and accepted (or imposed by the architect) knowledge.&lt;/p&gt;
 
-&lt;p&gt;This document defines the concepts and guidelines to follow in order to be a developer who can work in a software team in 2013.&lt;/p&gt;
+&lt;p&gt;This document defines the concepts and guidelines to follow in order to be a developer who can work in a software team in 2019.&lt;/p&gt;
 
 &lt;p&gt;I think that you are already proficient with this notions.&lt;/p&gt;
 

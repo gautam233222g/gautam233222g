@@ -5,14 +5,14 @@ description: "REST API tutorial on symfony2 second part"
 category: tutorial
 tags: [rest, api, symfony2]
 published: true
-date: 2013-11-16 13:00:00
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-11-16-web-api-rest-with-symfony2-the-best-way-the-post-method.md
+date: 2019-11-16 13:00:00
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-11-16-web-api-rest-with-symfony2-the-best-way-the-post-method.md
 ---
 {% include JB/setup %}
 
 ### Part 2 - the `POST`
 
-In the '[Symfony2 REST part 1](http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/)' we created the application,
+In the '[Symfony2 REST part 1](http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/)' we created the application,
 the bundle, we talked about the `GET` method,
 we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and brain services.
 
@@ -22,19 +22,19 @@ In this blog post we are going to create a new `Page` via **REST API**: the form
 
 **Edited**
 
-- 3/12/2013: Added the Request in the actions, thanks to [stloyd](http://twitter.com/stloyd)
+- 3/12/2019: Added the Request in the actions, thanks to [stloyd](http://twitter.com/stloyd)
 
 ## The github repository
 
-There's a repository at [liuggio/symfony2-rest-api-the-best-2013-way](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/)
+There's a repository at [liuggio/symfony2-rest-api-the-best-2019-way](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/)
 you could see the working code using the tag `part2` with
 
-    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
     cd blog-rest-symfony2
     git checkout -f part2
     bin/phpunit -c app
 
-All the tags for the demo project are at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags), and also you could compare the first 2 articles with [compare/part1...part2](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/compare/part1...part2).
+All the tags for the demo project are at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags), and also you could compare the first 2 articles with [compare/part1...part2](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/compare/part1...part2).
 
 ## HTTP-bang theory
 
@@ -358,7 +358,7 @@ in an array, so instead of `handleRequest`, we are going to `submit` the form.
 This function returns an object of `PageInterface` type, but if the parameters are not valid it
 throws an `InvalidFormException` that will be handled and caught by the controller.
 
-The test class is at [part2-src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/blob/part2/src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php/)
+The test class is at [part2-src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/blob/part2/src/Acme/BlogBundle/Tests/Handler/PageHandlerTest.php/)
 
 ### Why don't use the request?
 

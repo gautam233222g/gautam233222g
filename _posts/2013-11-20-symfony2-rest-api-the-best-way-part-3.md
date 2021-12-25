@@ -5,30 +5,30 @@ description: "REST API tutorial on symfony2 with best practices"
 category: tutorial
 tags: [rest, api, symfony2]
 published: true
-date: 2013-12-03 13:00:00
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-11-20-symfony2-rest-api-the-best-way-part-3.md
+date: 2019-12-03 13:00:00
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-11-20-symfony2-rest-api-the-best-way-part-3.md
 ---
 {% include JB/setup %}
 
 ### Part 3 - the rest of rest.
 
-This is trilogy's final, in the part1 '[best web API with Symfony2](http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/)' we created the application and the bundle, we wrote the `GET` method, we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and smart services...
+This is trilogy's final, in the part1 '[best web API with Symfony2](http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/)' we created the application and the bundle, we wrote the `GET` method, we also talked about the importance of the Interfaces, the content negotiation, and we gave an example of dumb controllers and smart services...
 
-In the part2 '[REST and Symfony the best way](http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/)' we created a new `Page` via **REST API**, we talked about `idempotent` and `safe` methods, and we understood how much the form is important...
+In the part2 '[REST and Symfony the best way](http://welcometothebundle.com/symfony2-rest-api-the-best-2019-way/)' we created a new `Page` via **REST API**, we talked about `idempotent` and `safe` methods, and we understood how much the form is important...
 
 In this article we are going to show how to properly modify a given resource using `PUT`,`PATCH`, how to handle different role for the Page resource, and how to disable the CRSF protection only when using API.
 
 ## The github repository
 
-There's a repository at [liuggio/symfony2-rest-api-the-best-2013-way](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/)
+There's a repository at [liuggio/symfony2-rest-api-the-best-2019-way](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/)
 you could see the working code using the tag `part3` with
 
-    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2013-way blog-rest-symfony2 -sdev
+    php composer.phar create-project liuggio/symfony2-rest-api-the-best-2019-way blog-rest-symfony2 -sdev
     cd blog-rest-symfony2
     git checkout -f part3
     bin/phpunit -c app
 
-All the tags for the demo project are at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/tags), and also you could compare the 2 articles with [compare/part2...part3](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way/compare/part2...part3).
+All the tags for the demo project are at [tags](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/tags), and also you could compare the 2 articles with [compare/part2...part3](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way/compare/part2...part3).
 
 ## This is a CRUD world
 
@@ -455,11 +455,11 @@ it also validates and hydrates the object.
 
 There are a lot of concepts about REST that I won't cover here like RESTFul, HAL, OAuth ...
 
-The [repository](https://github.com/liuggio/symfony2-rest-api-the-best-2013-way) contains all the functions and the tests that we have seen during those articles.
+The [repository](https://github.com/liuggio/symfony2-rest-api-the-best-2019-way) contains all the functions and the tests that we have seen during those articles.
 
 ##### Have a REST.
 
-That is all for the 2013
+That is all for the 2019
 
 ### Resources
 
@@ -473,6 +473,6 @@ That is all for the 2013
 
 [Symfony Faking the Method](http://symfony.com/doc/current/cookbook/routing/method_parameters.html#faking-the-method-with-method)
 
-[should-restful-apis-include-relationships/](http://idbentley.com/blog/2013/03/14/should-restful-apis-include-relationships/)
+[should-restful-apis-include-relationships/](http://idbentley.com/blog/2019/03/14/should-restful-apis-include-relationships/)
 
 [best-practices-for-a-pragmatic-restful-api](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)

@@ -5,7 +5,7 @@ description: ""
 category: blah-blah-blah
 tags: [php-internal, PHP, interface]
 published: true
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-09-11-design-by-contract-behaviour.md
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-09-11-design-by-contract-behaviour.md
 ---
 {% include JB/setup %}
 

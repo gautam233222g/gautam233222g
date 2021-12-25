@@ -5,7 +5,7 @@ description: "PHPUnit vs PHPSpec: theory on Behaviour Driven Development 1/3"
 category: post 
 tags: [phpunit, TDD, BDD, PHP, test, phpspec]
 published: true
-edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2013-01-05-phpunit-vs-phpspec-theory-on-behaviour-driven-development.md
+edit-link: https://github.com/liuggio/liuggio.github.com/edit/master/_posts/2019-01-05-phpunit-vs-phpspec-theory-on-behaviour-driven-development.md
 ---
 {% include JB/setup %}
 
@@ -78,7 +78,7 @@ We have to say that Ruby community helped a lot the evolution of BDD, RSpec is a
 
 • Test case example Becomes group
 
-**BUT** You would be distracted by the code loosing focus on the result, and you might miss the concept of behaviour. \[EDITED 07-01-2013 thanks to [euxpom ![exupom](http://gravatar.com/avatar/77014411a56fa9c746d6a89b7fd96121?size=20)](http://twitter.com/euxpom)\]
+**BUT** You would be distracted by the code loosing focus on the result, and you might miss the concept of behaviour. \[EDITED 07-01-2019 thanks to [euxpom ![exupom](http://gravatar.com/avatar/77014411a56fa9c746d6a89b7fd96121?size=20)](http://twitter.com/euxpom)\]
 
 
 ## [PHPSpec](https://github.com/phpspec/phpspec2) advantages
